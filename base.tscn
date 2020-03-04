@@ -13,7 +13,7 @@ void fragment() {
 [sub_resource type="ShaderMaterial" id=2]
 shader = SubResource( 1 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=3]
 size = 30
 font_data = ExtResource( 3 )
 
@@ -27,8 +27,8 @@ autostart = true
 [node name="Background" type="Sprite" parent="."]
 light_mask = 8
 material = SubResource( 2 )
-position = Vector2( 516.059, 301.267 )
-scale = Vector2( 16.0808, 9.19419 )
+position = Vector2( 516.059, 298.887 )
+scale = Vector2( 16.0808, 9.26856 )
 texture = ExtResource( 2 )
 
 [node name="BigBrush" type="Button" parent="."]
@@ -36,7 +36,7 @@ margin_left = 724.0
 margin_top = 23.0
 margin_right = 1018.0
 margin_bottom = 74.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "Big Brush"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -48,7 +48,7 @@ margin_left = 724.0
 margin_top = 83.0
 margin_right = 1019.0
 margin_bottom = 134.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "Small Brush"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -60,7 +60,7 @@ margin_left = 722.0
 margin_top = 258.0
 margin_right = 1020.0
 margin_bottom = 309.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "Clear Canvas"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -72,7 +72,7 @@ margin_left = 722.0
 margin_top = 317.0
 margin_right = 1020.0
 margin_bottom = 368.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "Transform"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -84,7 +84,7 @@ margin_left = 722.0
 margin_top = 381.0
 margin_right = 1020.0
 margin_bottom = 432.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "Transform Stop"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -96,7 +96,7 @@ margin_left = 722.0
 margin_top = 140.0
 margin_right = 1020.0
 margin_bottom = 191.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "Color 1"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -108,14 +108,14 @@ margin_left = 722.0
 margin_top = 199.0
 margin_right = 1020.0
 margin_bottom = 250.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "Color 2"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Boundry2" type="Sprite" parent="."]
-position = Vector2( 713.187, 305.627 )
+position = Vector2( 713.187, 301.627 )
 scale = Vector2( 0.181871, 9.30641 )
 texture = ExtResource( 2 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
